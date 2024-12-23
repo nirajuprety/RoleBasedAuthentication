@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Freelancing\\GIDS\\RolesBaseIdentification\\RolesBaseIdentification\\RolesBaseIdentification.csproj": {}
+    "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\RolesBaseIdentification.csproj": {}
   },
   "projects": {
-    "E:\\Freelancing\\GIDS\\RolesBaseIdentification\\RolesBaseIdentification\\RolesBaseIdentification.csproj": {
+    "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\RolesBaseIdentification.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Freelancing\\GIDS\\RolesBaseIdentification\\RolesBaseIdentification\\RolesBaseIdentification.csproj",
+        "projectUniqueName": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\RolesBaseIdentification.csproj",
         "projectName": "RolesBaseIdentification",
-        "projectPath": "E:\\Freelancing\\GIDS\\RolesBaseIdentification\\RolesBaseIdentification\\RolesBaseIdentification.csproj",
+        "projectPath": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\RolesBaseIdentification.csproj",
         "packagesPath": "C:\\Users\\niraj\\.nuget\\packages\\",
-        "outputPath": "E:\\Freelancing\\GIDS\\RolesBaseIdentification\\RolesBaseIdentification\\obj\\",
+        "outputPath": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,9 +58,37 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
