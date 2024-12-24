@@ -6,6 +6,7 @@ using RolesBaseIdentification.Repository;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using RolesBaseIdentification.Seeder;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,6 +54,9 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddAuthorization();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DbContext")));
 
 var app = builder.Build();
 // Apply database migrations
