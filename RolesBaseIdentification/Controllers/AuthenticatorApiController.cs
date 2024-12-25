@@ -31,7 +31,10 @@ namespace RolesBaseIdentification.Controllers
                 string secretKey = GenerateSecretKey(); 
                 var result = await _userManager.SetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret", secretKey);
 
-                return result != null;
+                user.TwoFactorEnabled = true;
+                var updateResult = await _userManager.UpdateAsync(user);
+
+                return updateResult.Succeeded && result != null;
             }
             catch (Exception)
             {
@@ -51,6 +54,9 @@ namespace RolesBaseIdentification.Controllers
                 var authenticator = new TwoFactorAuthenticator();
                 var setupCode = authenticator.GenerateSetupCode("MyApp", user.Email, Encoding.ASCII.GetBytes(secretKey));
 
+                user.TwoFactorEnabled = true;
+                var updateResult = await _userManager.UpdateAsync(user);
+                
                 return new EnableAuthResponse
                 {
                     QRCode = setupCode.QrCodeSetupImageUrl,
