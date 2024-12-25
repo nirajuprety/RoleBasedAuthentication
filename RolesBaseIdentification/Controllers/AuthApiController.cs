@@ -28,23 +28,44 @@ namespace RolesBaseIdentification.Controllers
            
             if (user != null && await _userManager.CheckPasswordAsync(user, request.Password))
             {
-
                 if (string.IsNullOrEmpty(request.OtpCode))
                 {
                     return BadRequest("OTP code is required for 2FA.");
                 }
-
-                // Retrieve the user's TOTP secret key
-                var secretKey = await _userManager.GetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret");
-
-                // Validate the provided OTP code
-                var authenticator = new TwoFactorAuthenticator();
-                var isValidOtp = authenticator.ValidateTwoFactorPIN(secretKey, request.OtpCode);
-
-                if (!isValidOtp)
+                if (!request.IsEmailedOtp)
                 {
-                    return Unauthorized("Invalid OTP code.");
+                    var secretKey = await _userManager.GetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret");
+
+                    var authenticator = new TwoFactorAuthenticator();
+                    var pinCode = authenticator.GetCurrentPIN(secretKey);
+                    if (pinCode == request.OtpCode)
+                    {
+                        var result = authenticator
+                        .ValidateTwoFactorPIN(secretKey, request.OtpCode);
+
+
+                    }
+                    else
+                    {
+                        return Unauthorized("Invalid OTP code.");
+                    }
                 }
+                else
+                {
+                    var emailOtp = await _userManager.GetAuthenticationTokenAsync(user, "Email2FA", "2FA-OTP");
+                    if (string.IsNullOrEmpty(emailOtp))
+                    {
+                        return BadRequest("Email OTP is required, but none was sent. Please request a new OTP.");
+                    }
+
+                    if (request.OtpCode != emailOtp)
+                    {
+                        return Unauthorized("Invalid email OTP.");
+                    }
+
+                    await _userManager.RemoveAuthenticationTokenAsync(user, "Email2FA", "2FA-OTP");
+                }
+  
 
                 var userRoles = await _userManager.GetRolesAsync(user);
                 var authClaims = new List<Claim>

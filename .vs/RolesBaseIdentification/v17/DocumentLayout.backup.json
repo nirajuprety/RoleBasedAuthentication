@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\seeder\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\seeder\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\service\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\service\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\controllers\\authenticatorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\controllers\\authenticatorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\seeder\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\seeder\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\service\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\service\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\model\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\model\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\service\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\rolesbaseidentification.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\rolesbaseidentification.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\model\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|solutionrelative:rolesbaseidentification\\model\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE247F4D-AB08-4B5C-8040-85E934E43C1A}|RolesBaseIdentification\\RolesBaseIdentification.csproj|e:\\freelancing\\gids\\rolebasedauthentication\\rolesbaseidentification\\model\\dtos\\response\\enableauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,11 +82,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UserSeeder.cs",
+              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Seeder\\UserSeeder.cs",
+              "RelativeDocumentMoniker": "RolesBaseIdentification\\Seeder\\UserSeeder.cs",
+              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Seeder\\UserSeeder.cs",
+              "RelativeToolTip": "RolesBaseIdentification\\Seeder\\UserSeeder.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T18:07:47.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Program.cs",
+              "RelativeDocumentMoniker": "RolesBaseIdentification\\Program.cs",
+              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Program.cs",
+              "RelativeToolTip": "RolesBaseIdentification\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:37:44.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\appsettings.json",
+              "RelativeDocumentMoniker": "RolesBaseIdentification\\appsettings.json",
+              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\appsettings.json",
+              "RelativeToolTip": "RolesBaseIdentification\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-23T17:37:07.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticatorApiController.cs",
+              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
+              "RelativeDocumentMoniker": "RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
+              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
+              "RelativeToolTip": "RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T04:32:14.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthApiController.cs",
+              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthApiController.cs",
+              "RelativeDocumentMoniker": "RolesBaseIdentification\\Controllers\\AuthApiController.cs",
+              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthApiController.cs",
+              "RelativeToolTip": "RolesBaseIdentification\\Controllers\\AuthApiController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwDIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T18:27:39.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Service\\EmailService\\IEmailService.cs",
               "RelativeDocumentMoniker": "RolesBaseIdentification\\Service\\EmailService\\IEmailService.cs",
@@ -99,93 +164,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthenticatorApiController.cs",
-              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
-              "RelativeDocumentMoniker": "RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
-              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
-              "RelativeToolTip": "RolesBaseIdentification\\Controllers\\AuthenticatorApiController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAmwFQAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T04:32:14.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\appsettings.json",
-              "RelativeDocumentMoniker": "RolesBaseIdentification\\appsettings.json",
-              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\appsettings.json",
-              "RelativeToolTip": "RolesBaseIdentification\\appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-23T17:37:07.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Program.cs",
-              "RelativeDocumentMoniker": "RolesBaseIdentification\\Program.cs",
-              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Program.cs",
-              "RelativeToolTip": "RolesBaseIdentification\\Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T17:37:44.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AuthApiController.cs",
-              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthApiController.cs",
-              "RelativeDocumentMoniker": "RolesBaseIdentification\\Controllers\\AuthApiController.cs",
-              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Controllers\\AuthApiController.cs",
-              "RelativeToolTip": "RolesBaseIdentification\\Controllers\\AuthApiController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAwBUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T18:27:39.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserSeeder.cs",
-              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Seeder\\UserSeeder.cs",
-              "RelativeDocumentMoniker": "RolesBaseIdentification\\Seeder\\UserSeeder.cs",
-              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Seeder\\UserSeeder.cs",
-              "RelativeToolTip": "RolesBaseIdentification\\Seeder\\UserSeeder.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T18:07:47.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
-              "RelativeDocumentMoniker": "RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
-              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
-              "RelativeToolTip": "RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T05:30:37.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Model\\DTOs\\Request\\LoginRequest.cs",
               "RelativeDocumentMoniker": "RolesBaseIdentification\\Model\\DTOs\\Request\\LoginRequest.cs",
               "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Model\\DTOs\\Request\\LoginRequest.cs",
               "RelativeToolTip": "RolesBaseIdentification\\Model\\DTOs\\Request\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T18:28:39.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
+              "RelativeDocumentMoniker": "RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
+              "ToolTip": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
+              "RelativeToolTip": "RolesBaseIdentification\\Service\\EmailService\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:30:37.548Z",
               "EditorCaption": ""
             },
             {
@@ -203,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RolesBaseIdentification.csproj",
               "DocumentMoniker": "E:\\Freelancing\\GIDS\\RoleBasedAuthentication\\RolesBaseIdentification\\RolesBaseIdentification.csproj",
               "RelativeDocumentMoniker": "RolesBaseIdentification\\RolesBaseIdentification.csproj",
