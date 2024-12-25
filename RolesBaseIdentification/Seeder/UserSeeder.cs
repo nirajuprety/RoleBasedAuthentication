@@ -14,7 +14,7 @@ namespace RolesBaseIdentification.Seeder
             new { Email = "superadmin@example.com", Password = "SuperAdmin@123", Role = "Super Admin" },
             new { Email = "staff@example.com", Password = "Staff@123", Role = "Staff" },
             new { Email = "lowlevelstaff@example.com", Password = "LowLevelStaff@123", Role = "Low-Level Staff" },
-            new { Email = "user@example.com", Password = "User@123", Role = "User" }
+            new { Email = "niraj787985465@yopmail.com", Password = "User@123", Role = "User" }
             };
 
             foreach (var userInfo in users)

@@ -3,6 +3,7 @@ using Google.Authenticator;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RolesBaseIdentification.Model.DTOs.Response;
+using RolesBaseIdentification.Service.EmailService;
 
 namespace RolesBaseIdentification.Controllers
 {
@@ -12,11 +13,12 @@ namespace RolesBaseIdentification.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IConfiguration _configuration;
-
-        public AuthenticatorApiController(UserManager<IdentityUser> userManager, IConfiguration configuration)
+        private readonly IEmailService _emailService;
+        public AuthenticatorApiController(UserManager<IdentityUser> userManager, IConfiguration configuration, IEmailService emailService)
         {
             _userManager = userManager;
             _configuration = configuration;
+            _emailService = emailService;
         }
         [HttpGet("SetTOTP")]
         public async Task<bool> SetTOTP(string userName)
@@ -74,6 +76,28 @@ namespace RolesBaseIdentification.Controllers
             {
                 return false;
             }
+        }
+
+
+        [HttpPost("send-email-otp")]
+        public async Task<IActionResult> SendEmailOtp(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            var otp = new Random().Next(100000, 999999).ToString();
+
+            await _userManager.SetAuthenticationTokenAsync(user, "Email2FA", "2FA-OTP", otp);
+
+            var subject = "Your Login OTP Code";
+            var message = $"Your OTP code for login is: {otp}. This code is valid for 5 minutes.";
+
+            await _emailService.SendEmailAsync(user.Email, subject, message);
+
+            return Ok("OTP sent successfully.");
         }
 
     }

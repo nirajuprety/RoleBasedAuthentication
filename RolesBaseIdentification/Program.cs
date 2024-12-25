@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using RolesBaseIdentification.Seeder;
 using Microsoft.EntityFrameworkCore;
+using RolesBaseIdentification.Service.EmailService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,6 +58,8 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DbContext")));
+
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
 // Apply database migrations

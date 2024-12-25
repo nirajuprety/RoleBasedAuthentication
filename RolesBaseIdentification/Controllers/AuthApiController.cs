@@ -1,6 +1,7 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Google.Authenticator;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -24,14 +25,33 @@ namespace RolesBaseIdentification.Controllers
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
             var user = await _userManager.FindByEmailAsync(request.Email);
+           
             if (user != null && await _userManager.CheckPasswordAsync(user, request.Password))
             {
+
+                if (string.IsNullOrEmpty(request.OtpCode))
+                {
+                    return BadRequest("OTP code is required for 2FA.");
+                }
+
+                // Retrieve the user's TOTP secret key
+                var secretKey = await _userManager.GetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret");
+
+                // Validate the provided OTP code
+                var authenticator = new TwoFactorAuthenticator();
+                var isValidOtp = authenticator.ValidateTwoFactorPIN(secretKey, request.OtpCode);
+
+                if (!isValidOtp)
+                {
+                    return Unauthorized("Invalid OTP code.");
+                }
+
                 var userRoles = await _userManager.GetRolesAsync(user);
                 var authClaims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
+                {
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                };
 
                 authClaims.AddRange(userRoles.Select(role => new Claim(ClaimTypes.Role, role)));
 
