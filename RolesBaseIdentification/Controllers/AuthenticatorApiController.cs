@@ -2,6 +2,7 @@
 using Google.Authenticator;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using OtpNet;
 using RolesBaseIdentification.Model.DTOs.Response;
 using RolesBaseIdentification.Service.EmailService;
 
@@ -27,7 +28,7 @@ namespace RolesBaseIdentification.Controllers
             {
                 var user = await _userManager.FindByNameAsync(userName);
 
-                string secretKey = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 32); 
+                string secretKey = GenerateSecretKey(); 
                 var result = await _userManager.SetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret", secretKey);
 
                 return result != null;
@@ -99,6 +100,10 @@ namespace RolesBaseIdentification.Controllers
 
             return Ok("OTP sent successfully.");
         }
-
+        string GenerateSecretKey()
+        {
+            var key = KeyGeneration.GenerateRandomKey(20); 
+            return OtpNet.Base32Encoding.ToString(key);
+        }
     }
 }
