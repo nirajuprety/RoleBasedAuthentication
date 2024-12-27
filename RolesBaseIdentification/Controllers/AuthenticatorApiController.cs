@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using Google.Authenticator;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +12,7 @@ namespace RolesBaseIdentification.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthenticatorApiController:ControllerBase
+    public class AuthenticatorApiController : ControllerBase
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IConfiguration _configuration;
@@ -28,7 +30,7 @@ namespace RolesBaseIdentification.Controllers
             {
                 var user = await _userManager.FindByNameAsync(userName);
 
-                string secretKey = GenerateSecretKey(); 
+                string secretKey = GenerateSecretKey();
                 var result = await _userManager.SetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret", secretKey);
 
                 user.TwoFactorEnabled = true;
@@ -42,10 +44,11 @@ namespace RolesBaseIdentification.Controllers
             }
         }
         [HttpGet("EnableTOTP")]
-        public async Task<EnableAuthResponse> EnableTOTP(string userName)
+        public async Task<EnableAuthResponse> EnableTOTP(string token)
         {
             try
             {
+                string userName = GetEmailFromToken(token);
                 var user = await _userManager.FindByNameAsync(userName);
 
                 var secretKey = await _userManager.GetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret");
@@ -56,7 +59,7 @@ namespace RolesBaseIdentification.Controllers
 
                 user.TwoFactorEnabled = true;
                 var updateResult = await _userManager.UpdateAsync(user);
-                
+
                 return new EnableAuthResponse
                 {
                     QRCode = setupCode.QrCodeSetupImageUrl,
@@ -69,10 +72,12 @@ namespace RolesBaseIdentification.Controllers
             }
         }
         [HttpGet("VerifyTOTP")]
-        public async Task<bool> VerifyTOTP(string userName, string code)
+        public async Task<bool> VerifyTOTP(string token, string code)
         {
             try
             {
+                string userName = GetEmailFromToken(token);
+
                 var user = await _userManager.FindByNameAsync(userName);
                 var secretKey = await _userManager.GetAuthenticationTokenAsync(user, "TOTP", "2FA-Secret");
 
@@ -87,8 +92,11 @@ namespace RolesBaseIdentification.Controllers
 
 
         [HttpPost("send-email-otp")]
-        public async Task<IActionResult> SendEmailOtp(string email)
+        public async Task<IActionResult> SendEmailOtp(string token)
         {
+
+            string email = GetEmailFromToken(token);
+
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
@@ -108,8 +116,24 @@ namespace RolesBaseIdentification.Controllers
         }
         string GenerateSecretKey()
         {
-            var key = KeyGeneration.GenerateRandomKey(20); 
+            var key = KeyGeneration.GenerateRandomKey(20);
             return OtpNet.Base32Encoding.ToString(key);
         }
+
+
+        string GetEmailFromToken(string token)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            if (handler.CanReadToken(token))
+            {
+                var jwtToken = handler.ReadJwtToken(token);
+
+                var emailClaim = jwtToken.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.Email);
+
+                return emailClaim?.Value ?? "Email not found";
+            }
+            throw new ArgumentException("Invalid token");
+        }
+
     }
 }
